@@ -1,0 +1,130 @@
+
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #234e70;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #176b87;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 850px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* 1. list-style-type: square */
+.square-list {
+    list-style-type: square;
+}
+
+/* 2. Số La Mã viết hoa */
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+/* 3. Sử dụng hình ảnh làm dấu đánh dấu */
+.image-list {
+    list-style-image: url("https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/2705.svg");
+    padding-left: 30px;
+}
+
+/* 4. Dấu đánh dấu nằm bên ngoài */
+.outside-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    background-color: #eaf4ff;
+    padding: 15px 15px 15px 40px;
+}
+
+/* 5. Dấu đánh dấu nằm bên trong */
+.inside-list {
+    list-style-type: circle;
+    list-style-position: inside;
+    background-color: #fff1e6;
+    padding: 15px;
+}
+
+/* 6. Thuộc tính rút gọn:
+   list-style: type position image */
+.shorthand-list {
+    list-style: square inside
+        url("https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/2705.svg");
+    padding: 15px 30px;
+    background-color: #f0eaff;
+}
+
+/* 7. Màu sắc và khoảng cách */
+.color-list {
+    background-color: #dff6e4;
+    color: #155e35;
+    list-style-type: square;
+    padding: 20px 20px 20px 45px;
+    border-left: 5px solid #28a745;
+    border-radius: 6px;
+}
+
+.color-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.color-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* 8. Danh sách tổng hợp */
+.roadmap-list {
+    list-style: upper-roman outside;
+    background-color: #e4f1ff;
+    color: #174a7e;
+    padding: 20px 20px 20px 50px;
+    border-radius: 8px;
+}
+
+.roadmap-list li {
+    margin-bottom: 12px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.roadmap-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
